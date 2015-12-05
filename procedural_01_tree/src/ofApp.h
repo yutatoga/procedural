@@ -27,8 +27,8 @@ class ofApp : public ofBaseApp{
 	
     void generatePointsDefault();
     void generatePointsAlternate1();
+    void seed();
     void clear();
-//    void seed();
     
     vector<SegmentHelper*> segmentHelpers;
     vector<Attractor*> attractors;
@@ -58,7 +58,6 @@ class ofApp : public ofBaseApp{
     
     int groundSeed = 0;
     long treeSeed = (long) ofRandom(0, 10000);
-    
     
     // test
     bool enableTest = false;

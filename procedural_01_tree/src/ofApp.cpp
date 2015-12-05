@@ -16,15 +16,7 @@ void ofApp::setup(){
     generatePointsDefault();
     //generatePointsAlternate1();
     
-    //create root segment
-    Segment *root = new Segment(ofVec3f(200, 500));
-    segmentHelpers.push_back(new SegmentHelper(root, nullptr));
-    
-    //create initial trunk
-    for (int i = 1; i < trunk_min_len+1; i++) {
-        Segment *s = new Segment(ofVec3f(200, 500-(i*growth_distance)));
-        segmentHelpers.push_back(new SegmentHelper(s, segmentHelpers[i-1]->currentSegment));
-    }
+    seed();
 }
 
 //--------------------------------------------------------------
@@ -185,17 +177,17 @@ void ofApp::generatePointsAlternate1() {
 }
 
 //--------------------------------------------------------------
-//void ofApp::seed() {
-//    //create root segment
-//    Segment *root = new Segment(ofVec3f(200, 500));
-//    segments.push_back(root);
-//    
-//    //create initial trunk
-//    for (int i = 0; i < 100/growth_distance; i++) {
-//        Segment *s = new Segment(ofVec3f(200, 500-(i*growth_distance)));
-//        segments.push_back(s);
-//    }
-//}
+void ofApp::seed() {
+    //create root segment
+    Segment *root = new Segment(ofVec3f(200, 500));
+    segmentHelpers.push_back(new SegmentHelper(root, nullptr));
+    
+    //create initial trunk
+    for (int i = 1; i < trunk_min_len+1; i++) {
+        Segment *s = new Segment(ofVec3f(200, 500-(i*growth_distance)));
+        segmentHelpers.push_back(new SegmentHelper(s, segmentHelpers[i-1]->currentSegment));
+    }
+}
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){

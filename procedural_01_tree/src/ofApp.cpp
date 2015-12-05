@@ -41,7 +41,9 @@ void ofApp::draw(){
     ofEnableDepthTest();{
         ofPushMatrix();{
             ofTranslate(ofGetWidth()/2, ofGetHeight()/2+(camHeight), 0);
-             ofRotateY(ofGetFrameNum());
+            if (enableRotate) {
+               ofRotateY(ofGetFrameNum());
+            }
             if (drawAttractors) {
                 for (int i = 0; i < (int)attractors.size(); i++) {
                     attractors[i]->draw();
@@ -197,7 +199,35 @@ void ofApp::generatePointsAlternate1() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    switch (key) {
+        case 'a':
+            drawAttractors = !drawAttractors;
+            break;
+        case 'b':
+            drawBranches = !drawBranches;
+            break;
+        case 'l':
+            drawLeaves = !drawLeaves;
+            break;
+        case ' ':
+            finished = !finished;
+            break;
+        case 'n':
+            clear();
+            setup();
+            finished = false;
+            break;
+        case 'r':
+            enableRotate = !enableRotate;
+            break;
+        default:
+            break;
+    }
+}
 
+void ofApp::clear(){
+    segmentHelpers.clear();
+    attractors.clear();
 }
 
 //--------------------------------------------------------------

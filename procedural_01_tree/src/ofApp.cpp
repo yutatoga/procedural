@@ -2,10 +2,6 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    ofSetVerticalSync(false);
-//    ofSetFrameRate(0);
-//    ofBackground(0, 0, 0, 0);
-    
     if(enableTest){
         test = new Test();
         testDataVector = test->readTextData("data.txt");
@@ -13,10 +9,8 @@ void ofApp::setup(){
         testDVector = test->readTextData("d.txt");
     }
     
-    generatePointsDefault();
-    //generatePointsAlternate1();
-    
-    seed();
+    generatePointsDefault(ofVec3f(ofGetWidth()/2.0, 200, 0), 155, 300, ofVec3f(ofGetWidth()/2.0, 500, 0), 200, 40, 100);
+    seed(ofVec2f(ofGetWidth()/2.0, 500));
 }
 
 //--------------------------------------------------------------
@@ -46,7 +40,7 @@ void ofApp::draw(){
             }
         }ofPopMatrix();
     }ofDisableDepthTest();
-    
+
     /*
      * This is where most of the magic starts happening.
      */
@@ -116,75 +110,61 @@ void ofApp::draw(){
 //this is the method to place the attractor points,
 //it can be replaced by others easily to quickly create
 //different types of tree
-void ofApp::generatePointsDefault(){
+void ofApp::generatePointsDefault(ofVec3f volumeCenter, float volumeRadius, int volumeAttractorNumber, ofVec3f rootCenter, float rootRadius, float rootHeight, int rootAttractorNumber){
     //create the attractors
-    ofVec3f volumeCenter(200, 200, 0);
-    float volumeRadius = 155;
-    
     if (enableTest){
         for (int i = 0; i < (int)testAttractorPosition.size(); i++){
             attractors.push_back(new Attractor(ofVec3f(testAttractorPosition[i][0], testAttractorPosition[i][1], testAttractorPosition[i][2])));
         }
     } else {
-        for (int i = 0; i < num_attractors; i++) {
-            
-            ofVec3f p((float) ofRandom(0, ofGetWidth()-50)+25,
-                      (float) ofRandom(0, ofGetHeight()-200)+25,
-                      (float) ofRandom(-200, 200));
-            if (ofDist(p.x, p.y, p.z, volumeCenter.x, volumeCenter.y, volumeCenter.z) < volumeRadius){
-                attractors.push_back(new Attractor(p));
-            }
+        for (int i = 0; i < volumeAttractorNumber; i++) {
+            ofVec3f position = randomSphereInside(volumeRadius, volumeCenter);
+            attractors.push_back(new Attractor(position));
         }
         
         //also add a few attractors for roots
-        ofVec3f rootCenter(ofGetWidth()/2.0, 545, 0);
         attractors.push_back(new Attractor(rootCenter));
-        for (int i = 0; i < 500; i++) {
-            ofVec3f p(ofRandom(0, 500), ofRandom(490, 590), ofRandom(-300, 300));
-            if(ofDist(p.x, p.y, p.z, rootCenter.x, rootCenter.y, rootCenter.z) < 200){
-                attractors.push_back(new Attractor(p));
-            }
+        for (int i = 0; i < rootAttractorNumber; i++) {
+            ofVec3f position = randomEllipsoidInside(rootRadius, 40, rootRadius, rootCenter);
+            attractors.push_back(new Attractor(position));
         }
     }
 }
 
-//--------------------------------------------------------------
-void ofApp::generatePointsAlternate1() {
-    //create the attractors
-    ofVec3f volumeCenter((ofGetWidth()/2)-ofRandom(-50,50), ofRandom(250, 400), ofRandom(-100, 100));
-    ofVec3f volumeCenter2((ofGetWidth()/2)-ofRandom(-50,50), ofRandom(150, 300), ofRandom(-100, 100));
-    ofVec3f volumeCenter3((ofGetWidth()/2)-ofRandom(-50,50), ofRandom(150, 300), ofRandom(-100, 100));
-    float volumeRadius = ofRandom(50, 200);
-    float volumeRadius2 = ofRandom(50, 200);
-    float volumeRadius3 = ofRandom(50, 200);
-    for (int i = 0; i < num_attractors; i++) {
-        ofVec3f p((int) ofRandom(0, ofGetWidth()), (int) ofRandom(0, ofGetHeight()), (int) ofRandom(-500, 500));
-        if (ofDist(p.x, p.y, p.z, volumeCenter.x, volumeCenter.y, volumeCenter.z) < volumeRadius ||
-            ofDist(p.x, p.y, p.z, volumeCenter2.x, volumeCenter2.y, volumeCenter2.z) < volumeRadius2 ||
-            ofDist(p.x, p.y, p.z, volumeCenter3.x, volumeCenter3.y, volumeCenter3.z) < volumeRadius3){
-            attractors.push_back(new Attractor(p));
-        }
-    }
-    //also add a few attractors for roots
-    ofVec3f rootCenter(ofGetWidth()/2, 545, 0);
-    attractors.push_back(new Attractor(rootCenter));
-    for (int i = 0; i < 500; i++) {
-        ofVec3f p(ofRandom(0, 500), ofRandom(490, 590), ofRandom(-300, 300));
-        if(ofDist(p.x, p.y, p.z, rootCenter.x, rootCenter.y, rootCenter.z) < 200){
-            attractors.push_back(new Attractor(p));
-        }
-    }
+ofVec3f ofApp::randomEllipsoidInside(float half_width, float half_height, float half_depth, ofVec3f center){
+    float u = ofRandom(0, TWO_PI);
+    float v = acos(1-2*ofRandom(0, 1));
+    float radiusRate = sqrt(ofRandom(0, 1));
+    float x = radiusRate*half_width*cos(u)*sin(v);
+    float y = radiusRate*half_height*sin(u)*sin(v);
+    float z = radiusRate*half_depth*cos(v);
+    ofVec3f position(x, y, z);
+    position += center;
+    return position;
+}
+
+ofVec3f ofApp::randomSphereInside(float radius, ofVec3f center){
+    float theta = acos(1-2*ofRandom(0, 1));
+    float r0 = sqrt(ofRandom(0, 1)) * radius;
+    float r = r0*sin(theta);
+    float n = ofRandom(0, 1)*TWO_PI;
+    float x = r0*cos(theta);
+    float y = r*sin(n);
+    float z = r*cos(n);
+    ofVec3f position(x, y, z);
+    position += center;
+    return position;
 }
 
 //--------------------------------------------------------------
-void ofApp::seed() {
+void ofApp::seed(ofVec3f position) {
     //create root segment
-    Segment *root = new Segment(ofVec3f(200, 500));
+    Segment *root = new Segment(position);
     segmentHelpers.push_back(new SegmentHelper(root, nullptr));
     
     //create initial trunk
     for (int i = 1; i < trunk_min_len+1; i++) {
-        Segment *s = new Segment(ofVec3f(200, 500-(i*growth_distance)));
+        Segment *s = new Segment(ofVec3f(position.x, position.y-(i*growth_distance)));
         segmentHelpers.push_back(new SegmentHelper(s, segmentHelpers[i-1]->currentSegment));
     }
 }

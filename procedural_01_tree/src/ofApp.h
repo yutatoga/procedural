@@ -24,16 +24,17 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-	
+    void generatePointsDefault(ofVec3f volumeCenter, float volumeRadius, int volumeAttractorNumber, ofVec3f rootCenter, float rootRadius, float rootHeight, int rootAttractorNumber);
     void generatePointsDefault();
     void generatePointsAlternate1();
-    void seed();
+    void seed(ofVec3f position);
     void clear();
+    ofVec3f randomSphereInside(float radius, ofVec3f center = ofVec3f(0, 0, 0));
+    ofVec3f randomEllipsoidInside(float half_width, float half_height, float half_depth, ofVec3f center = ofVec3f(0, 0, 0));
     
     vector<SegmentHelper*> segmentHelpers;
     vector<Attractor*> attractors;
     
-    int num_attractors = 1000;
     int trunk_min_len = 50;
     
     float growth_distance  = 4;//1.6;
@@ -54,7 +55,7 @@ class ofApp : public ofBaseApp{
     bool drawAttractors = true;
     bool drawBranches = true;
     bool drawLeaves = true;
-    bool enableRotate = false;
+    bool enableRotate = true;
     
     int groundSeed = 0;
     long treeSeed = (long) ofRandom(0, 10000);

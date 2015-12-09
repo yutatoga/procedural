@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+#include "ofxXmlSettings.h"
 
 class ofApp : public ofBaseApp{
 
@@ -21,9 +23,17 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+    // listener
+    void frameRateChanged(int &frameRate);
+    
     void branch(float h);
     
     float theta;
     
-    int counter;
+    int branchNumber;
+    int currentBranchNumber;
+    ofxPanel panel;
+    ofParameter<int> frameRate;
+    ofParameter<bool> enableAnimation;
+    ofxLabel shortcut;
 };

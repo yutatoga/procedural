@@ -2,11 +2,8 @@
 
 class Branch{
 public:
-    Branch(){}
-    
-    // 各種設定
-    // 太さ , 開始位置 , 親の位置 , 節の長さ,
-    void make(float _size,ofVec3f _pos,ofVec3f _pPos,float _len,int _depth,float _prob);
+    Branch(float _size, ofVec3f _pos, ofVec3f _pPos, float _len, int _depth, float _prob):size(_size), pos(_pos), parentPos(_pPos), branch_len(_len),
+    branch_depth(_depth), prob_branch(_prob){};
     
     // 再帰で枝を生成する
     void grow();

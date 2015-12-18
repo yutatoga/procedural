@@ -1,14 +1,5 @@
 #include "Branch.h"
 
-void Branch::make(float _size,ofVec3f _pos,ofVec3f _pPos,float _len,int _depth,float _prob){
-    size = _size;
-    pos = _pos;
-    parentPos = _pPos;
-    branch_len = _len;
-    branch_depth = _depth;
-    prob_branch = _prob;
-}
-
 void Branch::deleteTree(){
     if(left)left->deleteTree();
     if(right)right->deleteTree();
@@ -27,25 +18,23 @@ void Branch::grow(){
         // 分岐 (prob_branchの確立で分岐する)
         if(!left && ofRandomuf() < prob_branch)
         {
-            left = new Branch();
-            left->make(size * 0.96* 0.7,
-                       newPosAnimation(45),
-                       pos,
-                       branch_len * 0.7,
-                       0,
-                       0);
+            left = new Branch(size * 0.96* 0.7,
+                              newPosAnimation(45),
+                              pos,
+                              branch_len * 0.7,
+                              0,
+                              0);
             left->grow();
         }
         
         // 幹
         if(!right ){
-            right = new Branch();
-            right->make(size * 0.96,
-                        newPosAnimation(5),
-                        pos,
-                        branch_len,
-                        branch_depth +1,
-                        prob_branch + 200 / 5000.0);
+            right = new Branch(size * 0.96,
+                               newPosAnimation(5),
+                               pos,
+                               branch_len,
+                               branch_depth +1,
+                               prob_branch + 200 / 5000.0);
             
             right->grow();
         }

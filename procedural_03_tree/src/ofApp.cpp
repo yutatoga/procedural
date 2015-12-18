@@ -3,13 +3,12 @@
 
 void ofApp::makeTree(){
     if(!tree){
-        tree = new Branch();
+        tree = new Branch(50, ofVec3f(0,0,0), ofVec3f(0,-1,0) ,10,0,0);
     }
     else{
         tree->deleteTree();
-        tree = new Branch();
+        tree = new Branch(50, ofVec3f(0,0,0), ofVec3f(0,-1,0), 10,0,0);
     }
-    tree->make(50, ofVec3f(0,0,0), ofVec3f(0,-1,0),10,0,0);
     tree->grow();
 }
 

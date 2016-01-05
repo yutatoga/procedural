@@ -19,4 +19,5 @@ main difference from 00 is not using self-reference in Segment class by using Se
 - reference
   - https://www.processing.org/examples/tree.html
 
-![procedural_02](file:///Users/yuta-toga/Downloads/24163136626_4881769cd1_o.gif)
+![procedural_02](https://farm2.staticflickr.com/1637/24163136626_4881769cd1_o_d.gif)
+

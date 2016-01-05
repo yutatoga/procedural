@@ -30,13 +30,23 @@ void ofApp::draw(){
             if (enableRotate) {
                ofRotateY(ofGetFrameNum());
             }
+            // draw (opaque)
             if (drawAttractors) {
                 for (int i = 0; i < (int)attractors.size(); i++) {
                     attractors[i]->draw();
                 }
             }
+            
+            // draw branches (opaque)
             for (int i = (int)segmentHelpers.size()-1; i > 0; i--) {
-                segmentHelpers[i]->draw(drawBranches, drawLeaves);
+                segmentHelpers[i]->drawBranches(drawBranches, drawLeaves);
+            }
+            
+            // draw leaves (translucent)
+            if (drawLeaves) {
+                for (int i = (int)segmentHelpers.size()-1; i > 0; i--) {
+                    segmentHelpers[i]->drawLeaves();
+                }
             }
         }ofPopMatrix();
     }ofDisableDepthTest();

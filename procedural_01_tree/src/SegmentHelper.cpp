@@ -1,6 +1,6 @@
 #include "SegmentHelper.h"
 
-void SegmentHelper::draw(bool drawBranches, bool drawLeaves){
+void SegmentHelper::drawBranches(bool drawBranches, bool drawLeaves){
     if (parentSegment != NULL) {//null signals root
         ofVec3f ploc = parentSegment->loc;
         
@@ -18,9 +18,7 @@ void SegmentHelper::draw(bool drawBranches, bool drawLeaves){
             }ofPopMatrix();
         }
         
-        if (drawLeaves){
-            this->drawLeaves();
-        } else {
+        if (!drawLeaves){
             currentSegment->area = 0;
         }
     } else {

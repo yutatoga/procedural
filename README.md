@@ -27,3 +27,8 @@ main difference from 00 is not using self-reference in Segment class by using Se
 
 ![procedural_03](https://farm2.staticflickr.com/1458/23821477879_d3615d5f78_o_d.gif)
 
+## procedural 04
+- reference
+    - http://wowdev.jp/?p=1212
+
+![procedural_04](https://farm2.staticflickr.com/1490/24189383295_c79d3b9559_o_d.gif)

@@ -32,3 +32,9 @@ main difference from 00 is not using self-reference in Segment class by using Se
     - http://wowdev.jp/?p=1212
 
 ![procedural_04](https://farm2.staticflickr.com/1490/24189383295_c79d3b9559_o_d.gif)
+
+## procedural 05
+- reference
+    - http://natureofcode.com/
+
+![procedural_5](https://farm2.staticflickr.com/1480/23580675943_fda5e57a8a_o_d.gif)

@@ -5,8 +5,8 @@ void Branch::deleteTree(){
     if(left)left->deleteTree();
     if(right)right->deleteTree();
     
-    left=NULL;
-    right=NULL;
+    left = nullptr;
+    right = nullptr;
     
     delete this;
 }

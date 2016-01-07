@@ -27,5 +27,5 @@ protected:
     ofVec3f pos; // 自分の枝の位置
     float size; // 太さ(今回は成長を止めるための指標として使用(成長に従って細くなり、ある程度で停止。)
     ofVec3f parentPos; // 親の枝の位置
-    Branch *left=NULL,*right=NULL; // 子をnullで初期化(無限定義でメモリーを無限に使用しないようにする)
+    Branch *left=nullptr, *right=nullptr; // 子をnullptrで初期化(無限定義でメモリーを無限に使用しないようにする)
 };

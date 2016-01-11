@@ -5,6 +5,7 @@ public:
     // コンストラクタ
     Branch(float _size, ofVec3f _pos, ofVec3f _pPos, float _len, int _depth, float _prob):size(_size), pos(_pos), parentPos(_pPos), branch_len(_len),
     branch_depth(_depth), prob_branch(_prob){};
+    ~Branch(){};
     
     // 再帰で枝を生成する
     void grow();

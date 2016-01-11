@@ -7,8 +7,8 @@ void Branch::deleteTree(){
     
     left = nullptr;
     right = nullptr;
-    
-    delete this;
+
+    delete this; // オブジェクト開放
 }
 
 void Branch::grow(){
@@ -67,7 +67,6 @@ ofVec3f Branch::newPosAnimation(float _angle){
     
     // 次の枝の長さの基準
     float L = branch_len;
-    cout << "L:" << L << endl;;
     // 枝のベクトルに垂直なベクトル
     ofVec3f N = V.getCrossed(ofVec3f(1,1,1));
     

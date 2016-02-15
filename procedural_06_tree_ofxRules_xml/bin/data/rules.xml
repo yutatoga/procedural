@@ -1,0 +1,17 @@
+<rules maxDepth="300" startRule="test" primitive="triangles" meshColour="0 255 0" wireframeColour="">
+    <ruleSet name="test">
+        <rule weight="100">
+            <tube transforms="ty 1 rx 1 " radius="2" next="test"/>
+        </rule>
+        <rule weight="100">
+            <tube transforms="ty 1 ry 20" radius="2" next="test"/>
+        </rule>
+        <rule weight="100">
+            <tube transforms="ty 4 rx 1 rz -2" radius="2" next="test"/>
+        </rule>
+        <rule weight="6">
+            <tube transforms="ry 180" radius="2" next="test"/>
+            <tube transforms="rx 15" radius="2" next="test"/>
+        </rule>
+    </ruleSet>
+</rules>

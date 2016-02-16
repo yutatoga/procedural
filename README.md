@@ -38,3 +38,10 @@ main difference from 00 is not using self-reference in Segment class by using Se
     - http://natureofcode.com/
 
 ![procedural_5](https://farm2.staticflickr.com/1480/23580675943_fda5e57a8a_o_d.gif)
+
+## procedural 06
+- reference
+    - http://www.neilmendoza.com/ofxrules/
+    - https://github.com/neilmendoza/ofxRules/
+    
+ ![procedural_6](https://farm2.staticflickr.com/1718/24923977232_2acd77db14_o_d.gif)

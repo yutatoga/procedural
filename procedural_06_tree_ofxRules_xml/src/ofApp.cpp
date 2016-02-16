@@ -2,12 +2,13 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetFrameRate(60);
-    rules.load("rules.xml");
+    ofSetFrameRate(FRAME_RATE);
+    rules.load(XML_FILE_NAME);
+    rules.watchFile(XML_FILE_NAME);
     ofDisableArbTex();
     
     cam.setAutoDistance(false);
-    cam.setPosition(0, -100, -1000);
+    cam.setPosition(0, -100, -500);
     cam.lookAt(ofVec3f(0, 300, 0));
 }
 

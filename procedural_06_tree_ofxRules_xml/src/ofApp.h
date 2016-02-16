@@ -4,6 +4,9 @@
 #include "ofxRules.h"
 #include "ofxXmlSettings.h"
 
+#define XML_FILE_NAME "rules.xml"
+#define FRAME_RATE 60
+
 class ofApp : public ofBaseApp{
 
 	public:

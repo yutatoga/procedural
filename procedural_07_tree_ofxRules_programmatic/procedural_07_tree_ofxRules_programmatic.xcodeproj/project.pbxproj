@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20AF6A61C71EBA100950190 /* Action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF68B1C71EBA100950190 /* Action.cpp */; };
+		B20AF6A71C71EBA100950190 /* ConeAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF68D1C71EBA100950190 /* ConeAction.cpp */; };
+		B20AF6A81C71EBA100950190 /* CubeAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF68F1C71EBA100950190 /* CubeAction.cpp */; };
+		B20AF6A91C71EBA100950190 /* IcosphereAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6911C71EBA100950190 /* IcosphereAction.cpp */; };
+		B20AF6AA1C71EBA100950190 /* LineAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6931C71EBA100950190 /* LineAction.cpp */; };
+		B20AF6AB1C71EBA100950190 /* PlaneAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6951C71EBA100950190 /* PlaneAction.cpp */; };
+		B20AF6AC1C71EBA100950190 /* PointAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6971C71EBA100950190 /* PointAction.cpp */; };
+		B20AF6AD1C71EBA100950190 /* TransformAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6991C71EBA100950190 /* TransformAction.cpp */; };
+		B20AF6AE1C71EBA100950190 /* TubeAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF69B1C71EBA100950190 /* TubeAction.cpp */; };
+		B20AF6AF1C71EBA100950190 /* Branch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF69D1C71EBA100950190 /* Branch.cpp */; };
+		B20AF6B01C71EBA100950190 /* Rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6A01C71EBA100950190 /* Rule.cpp */; };
+		B20AF6B11C71EBA100950190 /* Rules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6A21C71EBA100950190 /* Rules.cpp */; };
+		B20AF6B21C71EBA100950190 /* RuleSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6A41C71EBA100950190 /* RuleSet.cpp */; };
+		B20AF6BC1C71EBA400950190 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6B51C71EBA400950190 /* ofxXmlSettings.cpp */; };
+		B20AF6BD1C71EBA400950190 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6B81C71EBA400950190 /* tinyxml.cpp */; };
+		B20AF6BE1C71EBA400950190 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6BA1C71EBA400950190 /* tinyxmlerror.cpp */; };
+		B20AF6BF1C71EBA400950190 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B20AF6BB1C71EBA400950190 /* tinyxmlparser.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B20AF68B1C71EBA100950190 /* Action.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Action.cpp; sourceTree = "<group>"; };
+		B20AF68C1C71EBA100950190 /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		B20AF68D1C71EBA100950190 /* ConeAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConeAction.cpp; sourceTree = "<group>"; };
+		B20AF68E1C71EBA100950190 /* ConeAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConeAction.h; sourceTree = "<group>"; };
+		B20AF68F1C71EBA100950190 /* CubeAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CubeAction.cpp; sourceTree = "<group>"; };
+		B20AF6901C71EBA100950190 /* CubeAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeAction.h; sourceTree = "<group>"; };
+		B20AF6911C71EBA100950190 /* IcosphereAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IcosphereAction.cpp; sourceTree = "<group>"; };
+		B20AF6921C71EBA100950190 /* IcosphereAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IcosphereAction.h; sourceTree = "<group>"; };
+		B20AF6931C71EBA100950190 /* LineAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LineAction.cpp; sourceTree = "<group>"; };
+		B20AF6941C71EBA100950190 /* LineAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineAction.h; sourceTree = "<group>"; };
+		B20AF6951C71EBA100950190 /* PlaneAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlaneAction.cpp; sourceTree = "<group>"; };
+		B20AF6961C71EBA100950190 /* PlaneAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaneAction.h; sourceTree = "<group>"; };
+		B20AF6971C71EBA100950190 /* PointAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PointAction.cpp; sourceTree = "<group>"; };
+		B20AF6981C71EBA100950190 /* PointAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointAction.h; sourceTree = "<group>"; };
+		B20AF6991C71EBA100950190 /* TransformAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TransformAction.cpp; sourceTree = "<group>"; };
+		B20AF69A1C71EBA100950190 /* TransformAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformAction.h; sourceTree = "<group>"; };
+		B20AF69B1C71EBA100950190 /* TubeAction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TubeAction.cpp; sourceTree = "<group>"; };
+		B20AF69C1C71EBA100950190 /* TubeAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TubeAction.h; sourceTree = "<group>"; };
+		B20AF69D1C71EBA100950190 /* Branch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Branch.cpp; sourceTree = "<group>"; };
+		B20AF69E1C71EBA100950190 /* Branch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Branch.h; sourceTree = "<group>"; };
+		B20AF69F1C71EBA100950190 /* ofxRules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxRules.h; sourceTree = "<group>"; };
+		B20AF6A01C71EBA100950190 /* Rule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rule.cpp; sourceTree = "<group>"; };
+		B20AF6A11C71EBA100950190 /* Rule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rule.h; sourceTree = "<group>"; };
+		B20AF6A21C71EBA100950190 /* Rules.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rules.cpp; sourceTree = "<group>"; };
+		B20AF6A31C71EBA100950190 /* Rules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rules.h; sourceTree = "<group>"; };
+		B20AF6A41C71EBA100950190 /* RuleSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RuleSet.cpp; sourceTree = "<group>"; };
+		B20AF6A51C71EBA100950190 /* RuleSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleSet.h; sourceTree = "<group>"; };
+		B20AF6B51C71EBA400950190 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		B20AF6B61C71EBA400950190 /* ofxXmlSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		B20AF6B81C71EBA400950190 /* tinyxml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		B20AF6B91C71EBA400950190 /* tinyxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		B20AF6BA1C71EBA400950190 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		B20AF6BB1C71EBA400950190 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* procedural_07_tree_ofxRules_programmaticDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = procedural_07_tree_ofxRules_programmaticDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		B20AF6881C71EBA100950190 /* ofxRules */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF6891C71EBA100950190 /* src */,
+			);
+			name = ofxRules;
+			sourceTree = "<group>";
+		};
+		B20AF6891C71EBA100950190 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF68A1C71EBA100950190 /* actions */,
+				B20AF69D1C71EBA100950190 /* Branch.cpp */,
+				B20AF69E1C71EBA100950190 /* Branch.h */,
+				B20AF69F1C71EBA100950190 /* ofxRules.h */,
+				B20AF6A01C71EBA100950190 /* Rule.cpp */,
+				B20AF6A11C71EBA100950190 /* Rule.h */,
+				B20AF6A21C71EBA100950190 /* Rules.cpp */,
+				B20AF6A31C71EBA100950190 /* Rules.h */,
+				B20AF6A41C71EBA100950190 /* RuleSet.cpp */,
+				B20AF6A51C71EBA100950190 /* RuleSet.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxRules/src;
+			sourceTree = "<group>";
+		};
+		B20AF68A1C71EBA100950190 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF68B1C71EBA100950190 /* Action.cpp */,
+				B20AF68C1C71EBA100950190 /* Action.h */,
+				B20AF68D1C71EBA100950190 /* ConeAction.cpp */,
+				B20AF68E1C71EBA100950190 /* ConeAction.h */,
+				B20AF68F1C71EBA100950190 /* CubeAction.cpp */,
+				B20AF6901C71EBA100950190 /* CubeAction.h */,
+				B20AF6911C71EBA100950190 /* IcosphereAction.cpp */,
+				B20AF6921C71EBA100950190 /* IcosphereAction.h */,
+				B20AF6931C71EBA100950190 /* LineAction.cpp */,
+				B20AF6941C71EBA100950190 /* LineAction.h */,
+				B20AF6951C71EBA100950190 /* PlaneAction.cpp */,
+				B20AF6961C71EBA100950190 /* PlaneAction.h */,
+				B20AF6971C71EBA100950190 /* PointAction.cpp */,
+				B20AF6981C71EBA100950190 /* PointAction.h */,
+				B20AF6991C71EBA100950190 /* TransformAction.cpp */,
+				B20AF69A1C71EBA100950190 /* TransformAction.h */,
+				B20AF69B1C71EBA100950190 /* TubeAction.cpp */,
+				B20AF69C1C71EBA100950190 /* TubeAction.h */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		B20AF6B31C71EBA400950190 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF6B41C71EBA400950190 /* src */,
+				B20AF6B71C71EBA400950190 /* libs */,
+			);
+			name = ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		B20AF6B41C71EBA400950190 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF6B51C71EBA400950190 /* ofxXmlSettings.cpp */,
+				B20AF6B61C71EBA400950190 /* ofxXmlSettings.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxXmlSettings/src;
+			sourceTree = "<group>";
+		};
+		B20AF6B71C71EBA400950190 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF6B81C71EBA400950190 /* tinyxml.cpp */,
+				B20AF6B91C71EBA400950190 /* tinyxml.h */,
+				B20AF6BA1C71EBA400950190 /* tinyxmlerror.cpp */,
+				B20AF6BB1C71EBA400950190 /* tinyxmlparser.cpp */,
+			);
+			name = libs;
+			path = ../../../addons/ofxXmlSettings/libs;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				B20AF6881C71EBA100950190 /* ofxRules */,
+				B20AF6B31C71EBA400950190 /* ofxXmlSettings */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* procedural_07_tree_ofxRules_programmaticDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* procedural_07_tree_ofxRules_programmatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "procedural_07_tree_ofxRules_programmatic" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = procedural_07_tree_ofxRules_programmatic;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* procedural_07_tree_ofxRules_programmaticDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "procedural_07_tree_ofxRules_programmatic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* procedural_07_tree_ofxRules_programmatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20AF6A91C71EBA100950190 /* IcosphereAction.cpp in Sources */,
+				B20AF6AF1C71EBA100950190 /* Branch.cpp in Sources */,
+				B20AF6BC1C71EBA400950190 /* ofxXmlSettings.cpp in Sources */,
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				B20AF6AC1C71EBA100950190 /* PointAction.cpp in Sources */,
+				B20AF6A61C71EBA100950190 /* Action.cpp in Sources */,
+				B20AF6A71C71EBA100950190 /* ConeAction.cpp in Sources */,
+				B20AF6AA1C71EBA100950190 /* LineAction.cpp in Sources */,
+				B20AF6AD1C71EBA100950190 /* TransformAction.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				B20AF6B21C71EBA100950190 /* RuleSet.cpp in Sources */,
+				B20AF6BF1C71EBA400950190 /* tinyxmlparser.cpp in Sources */,
+				B20AF6B11C71EBA100950190 /* Rules.cpp in Sources */,
+				B20AF6BE1C71EBA400950190 /* tinyxmlerror.cpp in Sources */,
+				B20AF6B01C71EBA100950190 /* Rule.cpp in Sources */,
+				B20AF6BD1C71EBA400950190 /* tinyxml.cpp in Sources */,
+				B20AF6AB1C71EBA100950190 /* PlaneAction.cpp in Sources */,
+				B20AF6A81C71EBA100950190 /* CubeAction.cpp in Sources */,
+				B20AF6AE1C71EBA100950190 /* TubeAction.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "procedural_07_tree_ofxRules_programmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "procedural_07_tree_ofxRules_programmatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

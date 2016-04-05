@@ -42,6 +42,14 @@ main difference from 00 is not using self-reference in Segment class by using Se
 ## procedural 06
 - reference
     - http://www.neilmendoza.com/ofxrules/
-    - https://github.com/neilmendoza/ofxRules/
+    - https://github.com/neilmendoza/ofxRules/tree/master/example-file
+    - https://github.com/neilmendoza/ofxRules/tree/master/example-file-live
     
  ![procedural_6](https://farm2.staticflickr.com/1718/24923977232_2acd77db14_o_d.gif)
+
+## procedural 07
+- reference
+    - http://www.neilmendoza.com/ofxrules/
+    - https://github.com/neilmendoza/ofxRules/tree/master/example-programmatic
+
+![procedural_7](https://farm2.staticflickr.com/1612/26222641056_6a7512e1d4_o_d.gif)

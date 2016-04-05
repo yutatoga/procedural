@@ -1,3 +1,7 @@
+Mac OS 10.11.3（15D21）
+XCode Version 7.3 (7D175)
+Openframeworks of_v0.9.0_osx_release
+
 # procedural
 ## procedural 00
 using self-reference in Segment class
@@ -43,13 +47,15 @@ main difference from 00 is not using self-reference in Segment class by using Se
 - reference
     - http://www.neilmendoza.com/ofxrules/
     - https://github.com/neilmendoza/ofxRules/tree/master/example-file
-    - https://github.com/neilmendoza/ofxRules/tree/master/example-file-live
+    - https://github.com/neilmendoza/ofxRules/tree/master/example-file-live 
+        -  https://github.com/neilmendoza/ofxRules/commit/4f5e170f05f62ecf58f70b418ab0cf7315da95f1
     
  ![procedural_6](https://farm2.staticflickr.com/1718/24923977232_2acd77db14_o_d.gif)
 
 ## procedural 07
 - reference
     - http://www.neilmendoza.com/ofxrules/
-    - https://github.com/neilmendoza/ofxRules/tree/master/example-programmatic
+    - https://github.com/neilmendoza/ofxRules/tree/master/example-programmatic  
+        - https://github.com/neilmendoza/ofxRules/commit/4f5e170f05f62ecf58f70b418ab0cf7315da95f1
 
 ![procedural_7](https://farm2.staticflickr.com/1612/26222641056_6a7512e1d4_o_d.gif)
